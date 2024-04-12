@@ -11,5 +11,7 @@ public class JspConst {
 
     public static final String LOGIN_JSP = "/jsp/login.jsp";
     public static final String HOME_JSP = "/jsp/home.jsp";
+    public static final String INDEX_JSP = "/index.jsp";
+    public static final String REGISTRATION_JSP = "/jsp/registration.jsp";
 
 }
