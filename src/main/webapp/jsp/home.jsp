@@ -8,10 +8,16 @@
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    <h2>User Info:</h2>
-    <p>User name: ${user.name}</p>
-    <p>User email: ${user.email}</p>
-    <p>User login: ${user.login}</p>
-    <p>Password: ${user.password}</p>
+    <jsp:include page="<%=JspConst.MENU_JSP%>"/>
+    <c:if test="${not empty tvs}">
+        <c:forEach var="tv" items="${tvs}">
+            <div class="stock-item-box">
+                <img class="small-image" src="/img/tv/${tv.vendor}-${tv.model}.jpg" alt="img">
+                <p>Vendor ${tv.vendor}</p>
+                <p>Model ${tv.model}</p>
+                <p>Price ${tv.price} byn.</p>
+            </div>
+        </c:forEach>
+    </c:if>
 </body>
 </html>

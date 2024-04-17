@@ -29,3 +29,85 @@ input[type=submit] {
 .error {
     color: red;
 }
+
+/*Styles for menu */
+.nav-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: gray;
+}
+
+.nav-li {
+    float: right;
+}
+
+.nav-li.float-left {
+    float: left;
+}
+
+.nav-li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+.nav-li a:hover:not(.active) {
+    background-color: dimgray;
+}
+
+.active {
+    background-color: green;
+}
+
+/*default image stiles */
+
+.default-image {
+    width: 100%;
+    opacity: 0.5;
+}
+
+body {
+    margin: 0;
+}
+
+/*Styles for slider*/
+
+.slides {
+    display: none;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: 50px auto;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: 0.4}
+    to {opacity: 1}
+}
+
+/* Stock item stiles */
+.stock-item-box {
+    background-color: lightgray;
+    width: 250px;
+    border: 3px solid green;
+    padding: 15px;
+    margin: 25px;
+    display: inline-block;
+}
+
+.small-image {
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

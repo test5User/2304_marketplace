@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
+    <jsp:include page="<%=JspConst.MENU_JSP%>"/>
+    <img class="default-image" src="<%=JspConst.BACKGROUND_IMAGE%>" alt="img">
     <div class="form-box">
         <h2>Login</h2>
         <form action="<%=AppConst.LOGIN_CONTROLLER%>" method="post">
