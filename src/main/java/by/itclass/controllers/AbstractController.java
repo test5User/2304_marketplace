@@ -1,5 +1,6 @@
 package by.itclass.controllers;
 
+import by.itclass.model.services.LaptopService;
 import by.itclass.model.services.TvService;
 import by.itclass.model.services.UserService;
 import jakarta.servlet.ServletException;
@@ -14,11 +15,13 @@ import static by.itclass.constants.JspConst.MESSAGE_ATTR;
 public abstract class AbstractController extends HttpServlet {
     protected UserService userService;
     protected TvService tvService;
+    protected LaptopService laptopService;
 
     @Override
     public void init() throws ServletException {
         userService = UserService.getInstance();
         tvService = TvService.getInstance();
+        laptopService = LaptopService.getInstance();
     }
 
     @Override

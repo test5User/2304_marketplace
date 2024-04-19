@@ -8,15 +8,15 @@ import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 
-import static by.itclass.constants.AppConst.TV_STOCK;
+import static by.itclass.constants.AppConst.LAPTOP_STOCK;
 import static by.itclass.constants.JspConst.*;
 
-@WebServlet(TV_STOCK)
-public class TvStockController extends AbstractController {
+@WebServlet(LAPTOP_STOCK)
+public class LaptopStockController extends AbstractController {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        var tvs = tvService.getTvs(req.getParameterMap());
-        req.setAttribute(TVS_ATTR, tvs);
-        forward(req, resp, TV_PAGE_JSP);
+        var laptops = laptopService.getLaptops(req.getParameterMap());
+        req.setAttribute(LAPTOPS_ATTR, laptops);
+        forward(req, resp, LAPTOP_PAGE_JSP);
     }
 }

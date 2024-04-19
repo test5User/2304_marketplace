@@ -9,15 +9,7 @@
 </head>
 <body>
     <jsp:include page="<%=JspConst.MENU_JSP%>"/>
-    <c:if test="${not empty tvs}">
-        <c:forEach var="tv" items="${tvs}">
-            <div class="stock-item-box">
-                <img class="small-image" src="/img/tv/${tv.vendor}-${tv.model}.jpg" alt="img">
-                <p>Vendor ${tv.vendor}</p>
-                <p>Model ${tv.model}</p>
-                <p>Price ${tv.price} byn.</p>
-            </div>
-        </c:forEach>
-    </c:if>
+    <jsp:include page="/jsp/slider/slider.html"/>
+    <script src="/js/slider.js"></script>
 </body>
 </html>

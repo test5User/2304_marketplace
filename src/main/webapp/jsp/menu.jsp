@@ -17,6 +17,8 @@
                 <a href="<%=AppConst.LOGOUT_CONTROLLER%>">Logout</a></li>
             <li class="nav-li float-left">
                 <a href="<%=AppConst.TV_STOCK%>">TV</a></li>
+            <li class="nav-li float-left">
+                <a href="<%=AppConst.LAPTOP_STOCK%>">Laptop</a></li>
         </c:otherwise>
     </c:choose>
 </ul>

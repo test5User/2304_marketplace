@@ -111,3 +111,60 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
+/*Styles for filter*/
+.vertical-menu {
+    width: 300px;
+    float: right;
+}
+
+.vertical-menu a {
+    background-color: lightgray;
+    color: black;
+    display: block;
+    padding: 12px;
+}
+
+.vertical-menu a:hover {
+    background-color: dimgray;
+}
+
+.vertical-menu a.active {
+    background-color: green;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+}
+
+.filter-container {
+    display: block;
+    position: relative;
+    padding-left: 70px;
+    padding-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    background-color: lightgray;
+}
+
+.filter-container input[type=checkbox] {
+    position: absolute;
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+    left: 20px;
+    top: 0;
+}
+
+.filter-container input {
+    position: absolute;
+    cursor: pointer;
+    height: 25px;
+    width: 50px;
+    left: 5px;
+    top: -4px;
+}
+
+.vertical-menu input[type=submit] {
+    width: 297px;
+    font-size: 22px;
+}
