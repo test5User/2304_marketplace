@@ -1,5 +1,6 @@
 package by.itclass.controllers;
 
+import by.itclass.model.services.CartService;
 import by.itclass.model.services.LaptopService;
 import by.itclass.model.services.TvService;
 import by.itclass.model.services.UserService;
@@ -16,12 +17,14 @@ public abstract class AbstractController extends HttpServlet {
     protected UserService userService;
     protected TvService tvService;
     protected LaptopService laptopService;
+    protected CartService cartService;
 
     @Override
     public void init() throws ServletException {
         userService = UserService.getInstance();
         tvService = TvService.getInstance();
         laptopService = LaptopService.getInstance();
+        cartService = CartService.getInstance();
     }
 
     @Override

@@ -18,6 +18,16 @@
                     <p>Vendor ${tv.vendor}</p>
                     <p>Model ${tv.model}</p>
                     <p>Price ${tv.price} byn.</p>
+                    <form method="post" action="<%=AppConst.CART_CONTROLLER%>">
+                        <input type="hidden" name="<%=JspConst.CART_ACTION_PARAM%>" value="add">
+                        <input type="hidden" name="<%=JspConst.ITEM_TYPE_PARAM%>" value="1">
+                        <input type="hidden" name="<%=JspConst.ITEM_ID_PARAM%>" value="${tv.id}">
+                        <input type="hidden" name="<%=JspConst.ITEM_VENDOR_PARAM%>" value="${tv.vendor}">
+                        <input type="hidden" name="<%=JspConst.ITEM_MODEL_PARAM%>" value="${tv.model}">
+                        <input type="hidden" name="<%=JspConst.ITEM_PRICE_PARAM%>" value="${tv.price}">
+                        <input type="hidden" name="<%=JspConst.QUANTITY_PARAM%>" value="1">
+                        <input type="submit" value="Add to cart">
+                    </form>
                 </div>
             </c:forEach>
         </c:when>
