@@ -25,16 +25,14 @@ public class CartService {
         switch (cartAction) {
             case "add" -> items.add(item);
             case "remove" -> items.remove(item);
-            case "increase" -> items.forEach(it -> cahngePurchase(it, item, true));
-            case "decrease" -> items.forEach(it -> cahngePurchase(it, item, false));
+            case "change" -> items.forEach(it -> setPurchase(it, item));
         }
         return items;
     }
 
-    private void cahngePurchase(OrderItem sourceItem, OrderItem changedItem, boolean isPlus) {
+    private void setPurchase(OrderItem sourceItem, OrderItem changedItem) {
         if (sourceItem.equals(changedItem)) {
-            var quantity = sourceItem.getQuantity();
-            sourceItem.setQuantity(isPlus ? quantity + 1 : quantity -1);
+            sourceItem.setQuantity(changedItem.getQuantity());
         }
     }
 }

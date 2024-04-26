@@ -42,8 +42,8 @@ public class CartController extends AbstractController {
 
     private void redirectToProductPage(HttpServletResponse response, int itemType) throws IOException {
         switch (itemType) {
-            case 1 : redirect(response, TV_STOCK);
-            case 2 : redirect(response, LAPTOP_STOCK);
+            case 1 -> redirect(response, TV_STOCK);
+            case 2 -> redirect(response, LAPTOP_STOCK);
         }
     }
 }

@@ -10,6 +10,9 @@
 <body>
     <jsp:include page="<%=JspConst.MENU_JSP%>"/>
     <jsp:include page="/jsp/slider/slider.html"/>
+    <c:if test="${not empty message}">
+        <h2>${message}</h2>
+    </c:if>
     <script src="/js/slider.js"></script>
 </body>
 </html>

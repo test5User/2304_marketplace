@@ -19,14 +19,16 @@ public class JspConst {
     public static final String ITEM_VENDOR_PARAM = "itemVendor";
     public static final String ITEM_MODEL_PARAM = "itemModel";
     public static final String ITEM_PRICE_PARAM = "itemPrice";
-    public static final String QUANTITY_PARAM = "quantityPrice";
+    public static final String QUANTITY_PARAM = "quantity";
 
+    public static final String ADDRESS_PARAM = "address";
 
     public static final String MESSAGE_ATTR = "message";
     public static final String USER_ATTR = "user";
     public static final String TVS_ATTR = "tvs";
     public static final String LAPTOPS_ATTR = "laptops";
     public static final String ORDER_ITEMS_ATTR = "orderItems";
+    public static final String ORDER_ID_ATTR = "orderId";
 
     public static final String LOGIN_JSP = "/jsp/login.jsp";
     public static final String HOME_JSP = "/jsp/home.jsp";
