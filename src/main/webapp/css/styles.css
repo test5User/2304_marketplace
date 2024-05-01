@@ -285,3 +285,32 @@ body {
     margin: 4px 2px;
     cursor: pointer;
 }
+
+/*Orders page styles*/
+.order-list-container {
+    background-color: lightgray;
+}
+
+.order-list-container input[type=submit] {
+    width: 200px;
+    background-color: green;
+    color: white;
+    padding: 10px 25px;
+    margin: 0 0 20px 20px;
+    cursor: pointer;
+}
+
+/*receipt page styles*/
+.receipt-container {
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    background-color: lightgray;
+    border: 1px solid gray;
+    padding: 20px;
+    display: inline-block;
+}
+
+.receipt-container .underline {
+    text-decoration: underline;
+}

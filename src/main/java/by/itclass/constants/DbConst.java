@@ -14,4 +14,7 @@ public class DbConst {
 
     public static final String MEMORY_SIZE_COL = "memorySize";
     public static final String CPU_COL = "cpu";
+
+    public static final String DATE_COL = "date";
+    public static final String ADDRESS_COL = "address";
 }

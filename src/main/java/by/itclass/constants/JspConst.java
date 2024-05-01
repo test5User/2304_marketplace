@@ -20,6 +20,7 @@ public class JspConst {
     public static final String ITEM_MODEL_PARAM = "itemModel";
     public static final String ITEM_PRICE_PARAM = "itemPrice";
     public static final String QUANTITY_PARAM = "quantity";
+    public static final String ORDER_ID_PARAM = "orderId";
 
     public static final String ADDRESS_PARAM = "address";
 
@@ -29,6 +30,8 @@ public class JspConst {
     public static final String LAPTOPS_ATTR = "laptops";
     public static final String ORDER_ITEMS_ATTR = "orderItems";
     public static final String ORDER_ID_ATTR = "orderId";
+    public static final String ORDERS_ATTR = "orders";
+    public static final String RECEIPT_ATTR = "receipt";
 
     public static final String LOGIN_JSP = "/jsp/login.jsp";
     public static final String HOME_JSP = "/jsp/home.jsp";
@@ -38,6 +41,8 @@ public class JspConst {
     public static final String TV_PAGE_JSP = "/jsp/filters/tv-page.jsp";
     public static final String LAPTOP_PAGE_JSP = "/jsp/filters/laptop-page.jsp";
     public static final String CART_JSP = "/jsp/cart.jsp";
+    public static final String ORDERS_JSP = "/jsp/orders.jsp";
+    public static final String RECEIPT_JSP = "/jsp/receipt.jsp";
 
     public static final String BACKGROUND_IMAGE = "/img/background-img.jpg";
 
