@@ -14,19 +14,6 @@ import static by.itclass.constants.DbConst.*;
 public class TvDao {
     public static final String SELECT_ALL_TV = "SELECT * FROM tv";
 
-    private static TvDao dao;
-
-    private TvDao() {
-        ConnectionManager.init();
-    }
-
-    public static TvDao getInstance() {
-        if (Objects.isNull(dao)) {
-            dao = new TvDao();
-        }
-        return dao;
-    }
-
     public List<Tv> selectAllTv() {
         return fillingCollection(SELECT_ALL_TV);
     }

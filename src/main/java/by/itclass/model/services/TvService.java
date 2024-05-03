@@ -9,20 +9,13 @@ import java.util.Objects;
 
 import static by.itclass.constants.JspConst.*;
 
-public class TvService {
-    private static TvService service;
-    private TvDao dao;
+public class TvService implements Service {
+    private final TvDao dao;
 
-    private TvService() {
-        dao = TvDao.getInstance();
+    public TvService() {
+        dao = new TvDao();
     }
 
-    public static TvService getInstance() {
-        if (Objects.isNull(service)) {
-            service = new TvService();
-        }
-        return service;
-    }
 
     public List<Tv> getTvs(Map<String, String[]> params) {
         if (params.isEmpty()) {

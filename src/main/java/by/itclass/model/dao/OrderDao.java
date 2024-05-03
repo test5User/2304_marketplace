@@ -25,19 +25,6 @@ public class OrderDao {
     public static final String SELECT_ORDER = "SELECT date, address FROM orders WHERE id = ?";
     public static final String SELECT_ITEMS = "SELECT itemType, itemId, itemPrice, quantity FROM orderItem WHERE orderId = ?";
 
-    private static OrderDao dao;
-
-    private OrderDao() {
-        ConnectionManager.init();
-    }
-
-    public static OrderDao getInstance() {
-        if (Objects.isNull(dao)) {
-            return new OrderDao();
-        }
-        return dao;
-    }
-
     public boolean saveOrder(HttpSession session, String address) {
         var user = (User) session.getAttribute(USER_ATTR);
         var now = LocalDateTime.now();

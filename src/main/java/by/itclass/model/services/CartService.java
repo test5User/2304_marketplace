@@ -9,12 +9,7 @@ import java.util.Objects;
 
 import static by.itclass.constants.JspConst.ORDER_ITEMS_ATTR;
 
-public class CartService {
-    private static CartService service;
-
-    public static CartService getInstance() {
-        return Objects.isNull(service) ? new CartService() : service;
-    }
+public class CartService implements Service {
 
     public List<OrderItem> processCart(HttpSession session, String cartAction,
                                        OrderItem item) {

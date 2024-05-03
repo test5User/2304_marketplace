@@ -13,19 +13,11 @@ import java.util.Objects;
 import static by.itclass.constants.JspConst.*;
 import static by.itclass.constants.JspConst.PRICE_TO_PARAM;
 
-public class LaptopService {
-    private static LaptopService service;
-    private LaptopDao dao;
+public class LaptopService implements Service {
+    private final LaptopDao dao;
 
-    private LaptopService() {
-        dao = LaptopDao.getInstance();
-    }
-
-    public static LaptopService getInstance() {
-        if (Objects.isNull(service)) {
-            service = new LaptopService();
-        }
-        return service;
+    public LaptopService() {
+        dao = new LaptopDao();
     }
 
     public List<Laptop> getLaptops(Map<String, String[]> params) {
